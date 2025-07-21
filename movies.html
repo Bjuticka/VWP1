@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Filmový přehled</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .film {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .film img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .film-info {
+      max-width: 600px;
+    }
+
+    .film-info h3 {
+      margin: 0;
+    }
+
+    .film-info p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Filmový přehled</h1>
+  </header>
+
+  <nav>
+    <a href="#scifi">SCI-FI</a>
+    <a href="#horror">HOROR</a>
+    <a href="#comedy">KOMEDIE</a>
+  </nav>
+
+  <section id="scifi">
+    <h2>SCI-FI</h2>
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Interstellar_film_poster.jpg" alt="Interstellar">
+      <div class="film-info">
+        <h3>Interstellar</h3>
+        <p>Hodnocení: ⭐⭐⭐⭐⭐ (9/10)</p>
+        <p>Vědecké sci-fi o cestě vesmírem kvůli záchraně lidstva.</p>
+      </div>
+    </div>
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Blade_Runner_2049_logo.png" alt="Blade Runner 2049">
+      <div class="film-info">
+        <h3>Blade Runner 2049</h3>
+        <p>Hodnocení: ⭐⭐⭐⭐☆ (8/10)</p>
+        <p>Futuristická detektivka s hlubokou filozofií.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="horror">
+    <h2>HOROR</h2>
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/The_Conjuring_2.jpg" alt="The Conjuring 2">
+      <div class="film-info">
+        <h3>The Conjuring 2</h3>
+        <p>Hodnocení: ⭐⭐⭐⭐☆ (7.5/10)</p>
+        <p>Paranormální vyšetřování v děsivém domě v Anglii.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="comedy">
+    <h2>KOMEDIE</h2>
+    <div class="film">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/YesMan2008Poster.jpg" alt="Yes Man">
+      <div class="film-info">
+        <h3>Yes Man</h3>
+        <p>Hodnocení: ⭐⭐⭐⭐☆ (7/10)</p>
+        <p>Komediální příběh o muži, který začne říkat „ano“ úplně na všechno.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
