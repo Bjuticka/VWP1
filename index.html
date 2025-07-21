@@ -5,63 +5,93 @@
   <title>Filmový přehled</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
-      background-color: #222;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
       color: white;
-      padding: 15px;
+      padding: 30px 20px;
       text-align: center;
     }
 
     nav {
-      background-color: #444;
-      padding: 10px;
+      background-color: #1e3c72;
       text-align: center;
+      padding: 10px 0;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 20px;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
     }
 
     section {
-      padding: 30px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h2 {
       border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
     }
 
     .film {
       display: flex;
-      align-items: center;
-      margin-bottom: 20px;
+      flex-wrap: wrap;
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
 
     .film img {
-      width: 120px;
+      width: 200px;
       height: auto;
-      margin-right: 20px;
-      border-radius: 8px;
+      object-fit: cover;
     }
 
     .film-info {
-      max-width: 600px;
+      flex: 1;
+      padding: 15px;
     }
 
     .film-info h3 {
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #1e3c72;
     }
 
     .film-info p {
       margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+      .film {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .film img {
+        width: 100%;
+      }
+
+      .film-info {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -80,19 +110,11 @@
   <section id="scifi">
     <h2>SCI-FI</h2>
     <div class="film">
-      <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Interstellar_film_poster.jpg" alt="Interstellar">
+      <img src="images/interstellar.jpg" alt="Interstellar">
       <div class="film-info">
         <h3>Interstellar</h3>
         <p>Hodnocení: ⭐⭐⭐⭐⭐ (9/10)</p>
         <p>Vědecké sci-fi o cestě vesmírem kvůli záchraně lidstva.</p>
-      </div>
-    </div>
-    <div class="film">
-      <img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Blade_Runner_2049_logo.png" alt="Blade Runner 2049">
-      <div class="film-info">
-        <h3>Blade Runner 2049</h3>
-        <p>Hodnocení: ⭐⭐⭐⭐☆ (8/10)</p>
-        <p>Futuristická detektivka s hlubokou filozofií.</p>
       </div>
     </div>
   </section>
@@ -100,7 +122,7 @@
   <section id="horror">
     <h2>HOROR</h2>
     <div class="film">
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/The_Conjuring_2.jpg" alt="The Conjuring 2">
+      <img src="images/conjuring.jpg" alt="The Conjuring 2">
       <div class="film-info">
         <h3>The Conjuring 2</h3>
         <p>Hodnocení: ⭐⭐⭐⭐☆ (7.5/10)</p>
@@ -112,7 +134,7 @@
   <section id="comedy">
     <h2>KOMEDIE</h2>
     <div class="film">
-      <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/YesMan2008Poster.jpg" alt="Yes Man">
+      <img src="images/yesman.jpg" alt="Yes Man">
       <div class="film-info">
         <h3>Yes Man</h3>
         <p>Hodnocení: ⭐⭐⭐⭐☆ (7/10)</p>
